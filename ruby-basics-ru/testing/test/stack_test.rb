@@ -10,7 +10,7 @@ class StackTest < Minitest::Test
   end
 
   def test_output_should_be_array
-    assert @stack.to_a.class == Array
+    assert @stack.to_a.instance_of? Array
   end
 
   def test_size_of_stack
