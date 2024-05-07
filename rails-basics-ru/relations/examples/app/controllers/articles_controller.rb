@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ArticlesController < ApplicationController
   def index
     @articles = Article.published.by_creation_date_desc

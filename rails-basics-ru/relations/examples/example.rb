@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Article.order(created_at: :desc)
 Article.order(created_at: :desc)
 Article.where(published: true).order(created_at: :desc)
@@ -13,7 +15,7 @@ article = Article.new
 
 article.author # nil
 
-author = article.build_author
+article.build_author
 # <Author:0x000055d15f486e18 id: nil, name: nil, created_at: nil, updated_at: nil>
 
 # Для связанной модели можно создать отдельные параметры
@@ -76,11 +78,11 @@ doctor.patients.pluck(:name) # ["Alice"]
 # Создание связанной модели
 
 article = Article.new
-author = article.build_author(name: 'Bob')
+article.build_author(name: 'Bob')
 
 author = Author.find(1)
 
-article = author.articles.build(title: 'Article 1', body: 'Article body') # аналог Article.new
+author.articles.build(title: 'Article 1', body: 'Article body') # аналог Article.new
 
 author.save # сохраняет основную и связанные модели
 
