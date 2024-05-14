@@ -1,0 +1,4 @@
+h2.display-6 Edit comment
+= simple_form_for(@comment, method: :patch, url: comment_path(@comment)) do |f|
+  = f.input :body
+  = f.button :submit, class: 'btn btn-success mt-4 btn-block'

@@ -1,0 +1,7 @@
+h2 Post comments:
+- @comments.each do |comment|
+  p.text-primary.display-6 = comment.body
+  p.small = comment.created_at
+  = link_to 'Edit comment', edit_comment_path(comment), class: 'btn btn-outline-primary me-2'
+  = link_to 'Delete comment', comment_path(comment), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: 'btn btn-danger'
+  hr
