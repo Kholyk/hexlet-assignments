@@ -1,0 +1,35 @@
+---
+en:
+  posts:
+    comments:
+      count:
+        few: "%{count} comments"
+        many: "%{count} comments"
+        one: 1 comment
+        other: "%{count} comments"
+        zero: Нет комментариев
+      create:
+        success: Comment was created.
+      edit:
+        title: Editing comment
+      update:
+        success: Comment was updated.
+    create:
+      success: Post was created.
+    destroy:
+      success: Post was destroyed.
+    edit:
+      title: Edit post
+    index:
+      title: Posts
+    links:
+      delete: Delete
+      edit: Edit
+      show: Show
+    new:
+      title: New Post
+    show:
+      body: Body
+      comments: Comments
+    update:
+      success: Post was updated.

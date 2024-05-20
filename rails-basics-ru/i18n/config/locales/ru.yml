@@ -1,0 +1,19 @@
+---
+ru:
+  back: Назад
+  destroy: Удалить
+  destroy_confirmation: Вы уверены?
+  edit: Редактировать
+  homepage:
+    title: Домашняя страница
+  layouts:
+    application:
+      hexlet_title: "© Хекслет, %{year}"
+    nav:
+      homepage_link: Домой
+      posts_link: Посты
+    shared:
+      nav:
+        hexlet_logo: Хекслет лого
+  show: Показать
+  title: Хекслет

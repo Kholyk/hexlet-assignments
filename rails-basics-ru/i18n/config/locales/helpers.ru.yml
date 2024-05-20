@@ -1,0 +1,10 @@
+---
+ru:
+  helpers:
+    submit:
+      post:
+        create: "Создать %{model}"
+        update: "Обновить %{model}"
+      post_comment:
+        create: "Создать %{model}"
+        update: "Обновить %{model}"

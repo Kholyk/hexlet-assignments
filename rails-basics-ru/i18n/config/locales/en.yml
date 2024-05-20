@@ -1,0 +1,19 @@
+---
+en:
+  back: Back
+  destroy: Delete
+  destroy_confirmation: Are you sure?
+  edit: Edit
+  homepage:
+    title: Home page
+  layouts:
+    application:
+      hexlet_title: "© Hexlet, %{year}"
+    nav:
+      homepage_link: Home
+      posts_link: Posts
+    shared:
+      nav:
+        hexlet_logo: Hexlet Logo
+  show: Show
+  title: Hexlet

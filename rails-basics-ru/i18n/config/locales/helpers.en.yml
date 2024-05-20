@@ -1,0 +1,7 @@
+---
+ru:
+  helpers:
+    submit:
+      post:
+        create: "Create %{model}"
+        update: "Update %{model}"
