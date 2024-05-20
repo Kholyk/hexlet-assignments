@@ -23,7 +23,6 @@ gem 'stimulus-rails'
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem 'cssbundling-rails'
 
-gem 'i18n-tasks'
 gem 'rails-i18n'
 gem 'simple_form'
 gem 'slim-rails'
@@ -44,7 +43,7 @@ group :development do
   gem 'web-console', '>= 4.1.0'
 
   # BEGIN
-  
+  gem 'i18n-tasks'
   # END
 end
 
