@@ -13,14 +13,14 @@ class SetLocaleMiddleware
   def _call(env)
     request = Rack::Request.new(env)
 
-    set_user_locale(request)
+    define_user_locale(request)
 
     @app.call(env)
   end
 
   private
 
-  def set_user_locale(request)
+  def define_user_locale(request)
     default_locale = I18n.locale
     return default_locale if request.env['HTTP_ACCEPT_LANGUAGE'].nil?
 
