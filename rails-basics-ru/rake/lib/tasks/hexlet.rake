@@ -1,3 +1,5 @@
+# frozen_string_literals: true
+
 require 'csv'
 
 namespace :hexlet do
@@ -11,9 +13,13 @@ namespace :hexlet do
 
     array_of_users.each do |user|
       first_name, last_name, birthday, email = user
-      user = User.create(first_name: first_name, last_name: last_name, birthday: birthday, email: email)
-      pp User.count
-      pp user
+
+      User.create(
+        first_name: first_name,
+        last_name: last_name,
+        birthday: Date.strptime(birthday, '%m/%d/%Y'),
+        email: email
+      )
     end
   end
 
