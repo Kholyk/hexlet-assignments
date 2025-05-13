@@ -17,8 +17,6 @@ class Hacker
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = uri.scheme == 'https'
       http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-      register_user_uri.use_ssl = uri.scheme == 'https'
-      register_user_uri.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
       # GET register form
       request = Net::HTTP::Get.new(uri)
